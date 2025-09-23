@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena Bi - College Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AB</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#achievements" class="nav-link">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievements</span>
+                </a>
+                <a href="#activities" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Activities</span>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-name">Athena Bi</h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" data-text='["Student at Los Alamitos High School", "Aspiring Computer Scientist", "Violinist & Composer", "Published Author"]'>Student at Los Alamitos High School</span>
+                    </div>
+                    <p class="hero-description">
+                        12th grade student passionate about technology, music, and literature. Ready to contribute to a diverse college community with my multidisciplinary background in programming, music composition, and creative writing.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">12th</span>
+                            <span class="stat-label">Grade Level</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2000+</span>
+                            <span class="stat-label">Books Read</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Published Works</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View Academic Work
+                        </a>
+<!--                        <button class="btn btn-secondary">-->
+<!--                            <i class="fas fa-download"></i>-->
+<!--                            Download Resume-->
+<!--                        </button>-->
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <i class="fas fa-user-graduate"></i>
+                            <div class="status-indicator"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Athena Bi (毕兰婷)</h3>
+                            <p>Los Alamitos High School</p>
+                            <p>12th Grade Student</p>
+                        </div>
+                        <div class="floating-icons">
+                            <div class="floating-icon" style="--delay: 0s;">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s;">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 2s;">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 3s;">
+                                <i class="fas fa-music"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="school-image">
+                        <img src="images/los-alamitos-high-school-stem-building-2.jpg" alt="Los Alamitos High School STEM Building" />
+                        <div class="image-overlay">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    <h3>Academic Profile</h3>
+                    <div class="academic-info">
+                        <p><strong>School:</strong> Los Alamitos High School</p>
+                        <p><strong>Grade:</strong> 12th Grade</p>
+                        <p><strong>Location:</strong> California, USA</p>
+                        <p><strong>Previous:</strong> Stanley G. Oswalt Academy</p>
+                        <p><strong>International Experience:</strong> Shanghai World Foreign Language Elementary School</p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Academic Interests</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Computer Science</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-music"></i>
+                            <span>Music Theory & Composition</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>Creative Writing</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Game Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Skills & Talents</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Programming</span>
+                        <span class="skill-tag">Violin (Grade 8)</span>
+                        <span class="skill-tag">Piano</span>
+                        <span class="skill-tag">Music Composition</span>
+                        <span class="skill-tag">Creative Writing</span>
+                        <span class="skill-tag">Game Development</span>
+                        <span class="skill-tag">Art & Painting</span>
+                        <span class="skill-tag">Dance</span>
+                        <span class="skill-tag">Taekwondo</span>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Background & Journey</h3>
+                    <div class="journey-timeline">
+                        <div class="timeline-item">
+                            <span class="year">2008</span>
+                            <span class="event">Born in Shanghai, China</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2016</span>
+                            <span class="event">Moved to USA for education</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2024</span>
+                            <span class="event">Senior at Los Alamitos High School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Research</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>The Abandoned Village</h3>
+                        <p>Mobile game application developed and published on Apple's official platform in October 2021. Features immersive gameplay and engaging storytelling.</p>
+                        <div class="project-tags">
+                            <span class="tag">Game Development</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">Published</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="status-badge">Published on App Store</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Academic Conference Paper</h3>
+                        <p>"A Comprehensive Web Application for Art Showcasing Utilizing Generative AI for Art Therapy Applications" - Submitted to 11th International Conference on Advances in Computer Science and Information Technology (ACSTY 2025) in Zurich, Switzerland.</p>
+                        <div class="project-tags">
+                            <span class="tag">Research Paper</span>
+                            <span class="tag">International Conference</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Art Therapy</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="status-badge">Conference Submission</span>
+                        </div>
+                        <br>
+                        <a href="Athena_paper.pdf" download="Athena_paper.pdf" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download Research Paper
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Reading & Art Therapy Platform</h3>
+                        <p>Developed comprehensive platform combining reading games with art therapy techniques to promote mental wellness and educational engagement.</p>
+                        <div class="project-tags">
+                            <span class="tag">Platform Development</span>
+                            <span class="tag">Therapy</span>
+                            <span class="tag">Education</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Published Novels on Wattpad</h3>
+                        <p>Authored and completed multiple novels including "Not Meant To Be," "The hellLands," "Hunted || MCYT Fantasy AU," and "Demigod SMP."</p>
+                        <div class="project-tags">
+                            <span class="tag">Creative Writing</span>
+                            <span class="tag">Fantasy</span>
+                            <span class="tag">Published</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Music Composition & Performance</h3>
+                        <p>Released multiple singles including "Dream" (2020) and "这个世界在等你去发现惊喜" (2020), plus albums "我的花园" (2016) and "My Heart Is Happy" (2017). First chair violinist in school orchestra and self-formed band.</p>
+                        <div class="project-tags">
+                            <span class="tag">Music Composition</span>
+                            <span class="tag">Violin Performance</span>
+                            <span class="tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Leadership</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>First Chair Violinist - School Orchestra</h3>
+                        <span class="timeline-date">August 2020 - Present</span>
+                        <p>Lead violinist in middle school and high school orchestra, demonstrating musical leadership and excellence in ensemble performance.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Band Founder & First Violin</h3>
+                        <span class="timeline-date">July 2022 - Present</span>
+                        <p>Co-founded student band with classmates, serving as first chair violinist and contributing to group leadership and musical direction.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Global Game Development Competitor</h3>
+                        <span class="timeline-date">2021 - 2022</span>
+                        <p>Consistently ranked in top 20 globally: 19th place out of 500 participants (2021), 14th place out of 550 participants (2022).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Charity Performance Organizer</h3>
+                        <span class="timeline-date">2023</span>
+                        <p>Organized and performed in charity event in Hangzhou, China, demonstrating commitment to community service and cultural exchange.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Recognition</h2>
+            <div class="achievements-grid">
+                <div class="achievement-category">
+                    <h3><i class="fas fa-medal"></i> Academic & Competition Awards</h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Global Game Development Competition</h4>
+                                <p>19th place out of 500 participants (2021)</p>
+                                <p>14th place out of 550 participants (2022)</p>
+                                <p>2nd place (top 5%) out of 920 participants (2025)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-microscope"></i>
+                            <div>
+                                <h4>2025 US Biology Olympiad</h4>
+                                <p>Semi-finalist (2025)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Patent Application</h4>
+                                <p>AI Art Therapy Web Application (Patent #63/734,039)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>National Children's Creative Art Contest</h4>
+                                <p>Special Gold Award for "太阳向日葵" (2012)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3><i class="fas fa-music"></i> Musical Achievements</h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Dance Competition Achievements</h4>
+                                <p>Showstopper 2023: Double Platinum, 1st Place Folkloric, 2nd Overall</p>
+                                <p>Rainbow National 2024: Overall High Point 1st Place, Double Platinum</p>
+                                <p>NEXTSTAR 2025: 7 awards including Regional Champion</p>
+                                <p>Rainbow 2025 Solo: Double Platinum, 4th Overall, NY Invitation</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-fist-raised"></i>
+                            <div>
+                                <h4>Taekwondo Achievements</h4>
+                                <p>Black Belt (2020)</p>
+                                <p>California State Open: Gold Medal (Poomsae)</p>
+                                <p>California State Open: Silver Medal (Sparring)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-music"></i>
+                            <div>
+                                <h4>Musical Leadership & Performance</h4>
+                                <p>Orchestra First Chair/Principal Violin</p>
+                                <p>Pursuing Grade 8 Violin Certification</p>
+                                <p>Self-formed Student Band Leader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3><i class="fas fa-book"></i> Literary & Creative Work</h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Published Music Albums & Singles</h4>
+                                <p>"我的花园" Album - Global Release (2016)</p>
+                                <p>"My Heart Is Happy" Album - Global Release (2017)</p>
+                                <p>"Dream" Single - Global Release (2020)</p>
+                                <p>"这个世界在等你去发现惊喜" Single - Global Release (2020)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>App Store Publication</h4>
+                                <p>"The Abandoned Village" - Official Apple Platform (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3><i class="fas fa-heart"></i> Community Service & Charity</h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <i class="fas fa-palette"></i>
+                            <div>
+                                <h4>Charity Art Exhibitions</h4>
+                                <p>2016: "天赋之美 让爱伴随" Exhibition - ¥120,000 raised for education</p>
+                                <p>2023: Hangzhou Charity Exhibition - ¥200,000 raised for autism support</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Early Recognition</h4>
+                                <p>Porsche Model Competition: Most Sparkling Eyes Award (2010)</p>
+                                <p>National Art Contest: Special Gold Award for "太阳向日葵" (2012)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <h2 class="section-title">Activities & Interests</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Avid Reader</h3>
+                    <p>Read over 2000 books across various genres, demonstrating intellectual curiosity and commitment to lifelong learning.</p>
+                    <div class="activity-stats">
+                        <span class="stat">2000+ Books</span>
+                        <span class="stat">Multiple Genres</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Visual Arts</h3>
+                    <p>Passionate about painting and visual arts, with award-winning artwork recognized in national competitions.</p>
+                    <div class="activity-stats">
+                        <span class="stat">Award Winner</span>
+                        <span class="stat">National Recognition</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>Taekwondo</h3>
+                    <p>Martial arts practitioner developing discipline, focus, and physical fitness through dedicated training.</p>
+                    <div class="activity-stats">
+                        <span class="stat">Martial Arts</span>
+                        <span class="stat">Discipline</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Dance</h3>
+                    <p>Expressive dancer combining artistic creativity with physical performance, contributing to well-rounded artistic development.</p>
+                    <div class="activity-stats">
+                        <span class="stat">Performance Arts</span>
+                        <span class="stat">Creative Expression</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Piano & Music Theory</h3>
+                    <p>Multi-instrumentalist with deep understanding of music theory, composition, and performance across multiple instruments.</p>
+                    <div class="activity-stats">
+                        <span class="stat">Multi-Instrumentalist</span>
+                        <span class="stat">Composer</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Broad Knowledge Base</h3>
+                    <p>Extensive knowledge across diverse fields including technology, arts, sciences, and daily life applications.</p>
+                    <div class="activity-stats">
+                        <span class="stat">Interdisciplinary</span>
+                        <span class="stat">Curious Mind</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Ready to Learn More?</h2>
+                <p>Thank you for reviewing my portfolio. I'm excited about the opportunity to contribute to your college community and continue my academic journey.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Los Alamitos High School - 12th Grade</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>California, USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
