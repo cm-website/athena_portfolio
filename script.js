@@ -2,47 +2,81 @@
 const navbar = document.querySelector('.navbar');
 const navMenu = document.getElementById('nav-menu');
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const navDropdown = document.querySelector('.nav-dropdown');
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-        navbar.style.boxShadow = 'none';
+    if (navbar) {
+        if (window.scrollY > 100) {
+            navbar.style.background = 'rgba(255, 251, 252, 0.98)';
+            navbar.style.boxShadow = '0 4px 20px rgba(232, 121, 169, 0.1)';
+        } else {
+            navbar.style.background = 'rgba(255, 251, 252, 0.95)';
+            navbar.style.boxShadow = 'none';
+        }
     }
 });
 
-// Mobile menu toggle
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-
-    // Animate hamburger lines
-    const spans = hamburger.querySelectorAll('span');
-    if (hamburger.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-    } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    }
-});
-
-// Close mobile menu when clicking on a link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
+// Helper function to close mobile menu
+function closeMobileMenu() {
+    if (navMenu) navMenu.classList.remove('active');
+    if (hamburger) {
         hamburger.classList.remove('active');
-
         const spans = hamburger.querySelectorAll('span');
         spans[0].style.transform = 'none';
         spans[1].style.opacity = '1';
         spans[2].style.transform = 'none';
+    }
+}
+
+// Mobile menu toggle (hamburger click)
+if (hamburger) {
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+
+        // Animate hamburger lines
+        const spans = hamburger.querySelectorAll('span');
+        if (hamburger.classList.contains('active')) {
+            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+        } else {
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        }
+    });
+}
+
+// Mobile dropdown toggle (Portfolio click)
+if (dropdownToggle) {
+    dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (navDropdown) {
+            navDropdown.classList.toggle('active');
+        }
+    });
+}
+
+// Close mobile menu when clicking on a regular nav link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        closeMobileMenu();
+        if (navDropdown) navDropdown.classList.remove('active');
+    });
+});
+
+// Close mobile menu when clicking on a dropdown item
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+dropdownItems.forEach(item => {
+    item.addEventListener('click', () => {
+        closeMobileMenu();
+        if (navDropdown) navDropdown.classList.remove('active');
     });
 });
 
@@ -77,7 +111,7 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
+            entry.target.classList.add('visible');
         }
     });
 }, observerOptions);
@@ -203,20 +237,6 @@ function animateCounters() {
         }, 10);
     });
 }
-
-// Intersection Observer for animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, observerOptions);
 
 // Observe elements for fade-in animation
 function observeElements() {
@@ -350,7 +370,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Delayed animations
     setTimeout(() => {
         animateCounters();
-        staggerAnimateAchievements();
     }, 500);
 
     // Easter egg
