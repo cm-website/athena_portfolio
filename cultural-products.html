@@ -9,311 +9,339 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-text">Athena Bi</span>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-text">Athena Bi</span>
+        </a>
+        <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
             </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
+            <div class="nav-dropdown">
+                <a href="#" class="nav-link dropdown-toggle active">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Project</span>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
                 </a>
-                <a href="index.html#about" class="nav-link">
-                    <i class="fas fa-user"></i>
-                    <span>About</span>
-                </a>
-                <a href="index.html#projects" class="nav-link">
-                    <i class="fas fa-code"></i>
-                    <span>Projects</span>
-                </a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active">
-                        <i class="fas fa-folder-open"></i>
-                        <span>Portfolio</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                <div class="dropdown-menu">
+                    <a href="programming.html" class="dropdown-item">
+                        <i class="fas fa-code"></i> Coding
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="programming.html" class="dropdown-item">
-                            <i class="fas fa-code"></i> Programming
+                    <a href="storybook.html" class="dropdown-item">
+                        <i class="fas fa-book"></i> Writing
+                    </a>
+                    <div class="sub-dropdown">
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-palette"></i> Art
                         </a>
-                        <a href="dancing.html" class="dropdown-item">
-                            <i class="fas fa-music"></i> Solo Dancing
-                        </a>
-                        <a href="storybook.html" class="dropdown-item">
-                            <i class="fas fa-book"></i> Published Story Book
-                        </a>
-                        <a href="violin.html" class="dropdown-item">
-                            <img src="icon/violin-pink.png" class="custom-icon" alt=""> Violin
-                        </a>
-                        <a href="songs.html" class="dropdown-item">
-                            <i class="fas fa-microphone"></i> Songs
-                        </a>
-                        <a href="volunteer.html" class="dropdown-item">
-                            <i class="fas fa-hands-helping"></i> Volunteer
-                        </a>
-                        <a href="charity-exhibition.html" class="dropdown-item">
-                            <i class="fas fa-palette"></i> Art Charity Exhibition
-                        </a>
-                        <a href="cultural-products.html" class="dropdown-item">
-                            <i class="fas fa-gift"></i> Cultural Products
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <div class="page-header-content">
-                <div class="page-icon">
-                    <i class="fas fa-gift"></i>
-                </div>
-                <h1>Cultural and Creative Products</h1>
-                <p>Original merchandise and creative product design</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <section class="portfolio-content">
-        <div class="container">
-            <!-- Stats -->
-            <div class="stats-banner">
-                <div class="stat-item">
-                    <span class="stat-number">3,000</span>
-                    <span class="stat-label">RMB Earned</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">7+</span>
-                    <span class="stat-label">Product Types</span>
-                </div>
-<!--                <div class="stat-item">-->
-<!--                    <span class="stat-number">Gift Box</span>-->
-<!--                    <span class="stat-label">Complete Set</span>-->
-<!--                </div>-->
-            </div>
-
-            <!-- Product Gallery -->
-            <div class="content-section">
-                <h2><i class="fas fa-images"></i> Product Gallery</h2>
-                <div class="products-gallery">
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products1.jpg" alt="Cultural Creative Product 1">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products2.jpg" alt="Cultural Creative Product 2">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products3.jpg" alt="Cultural Creative Product 3">
-                    </div>
-                     <div class="product-item">
-                        <img src="images/Cultural and creative products8.jpg" alt="Cultural Creative Product 8">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products4.jpg" alt="Cultural Creative Product 4">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products5.jpg" alt="Cultural Creative Product 5">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products6.jpg" alt="Cultural Creative Product 6">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products7.jpg" alt="Cultural Creative Product 7">
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Product Description -->
-            <div class="content-section">
-                <h2><i class="fas fa-box-open"></i> Gift Box Collection</h2>
-                <div class="content-card featured">
-                    <p>The cultural and creative products include eternal pencils, erasers, pencil sharpeners, notebooks, stickers, magnetic bookmarks, and pencil cases, all packaged in a gift box set. Earned 3,000 RMB from sales.</p>
-                </div>
-            </div>
-
-            <!-- Product List -->
-            <div class="content-section">
-                <h2><i class="fas fa-list"></i> Product Collection</h2>
-                <div class="products-grid">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                        <h4>Eternal Pencils</h4>
-                        <p>Innovative pencils with unique designs</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-eraser"></i>
-                        </div>
-                        <h4>Erasers</h4>
-                        <p>Custom-designed erasers</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-cut"></i>
-                        </div>
-                        <h4>Pencil Sharpeners</h4>
-                        <p>Artistic sharpener designs</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <h4>Notebooks</h4>
-                        <p>Creative cover illustrations</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-sticky-note"></i>
-                        </div>
-                        <h4>Stickers</h4>
-                        <p>Original artwork sticker sets</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-bookmark"></i>
-                        </div>
-                        <h4>Magnetic Bookmarks</h4>
-                        <p>Functional art bookmarks</p>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h4>Pencil Cases</h4>
-                        <p>Designed storage solutions</p>
-                    </div>
-                    <div class="product-card gift-box">
-                        <div class="product-icon">
-                            <i class="fas fa-gift"></i>
-                        </div>
-                        <h4>Complete Gift Box Set</h4>
-                        <p>All items packaged together</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- More Product Images -->
-            <div class="content-section">
-                <h2><i class="fas fa-camera"></i> More Products</h2>
-                <div class="products-gallery">
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products9.jpg" alt="Cultural Creative Product 9">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products10.jpg" alt="Cultural Creative Product 10">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products11.jpg" alt="Cultural Creative Product 11">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products12.jpg" alt="Cultural Creative Product 12">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products13.jpg" alt="Cultural Creative Product 13">
-                    </div>
-                    <div class="product-item">
-                        <img src="images/Cultural and creative products14.jpg" alt="Cultural Creative Product 14">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Documentation -->
-            <div class="content-section">
-                <h2><i class="fas fa-file-alt"></i> Product Documentation</h2>
-                <div class="pdf-preview-grid">
-                    <div class="pdf-preview-card">
-                        <a href="documents/Cultural and creative products1.pdf" target="_blank">
-                            <iframe src="documents/Cultural and creative products1.pdf#page=1&view=FitH" class="pdf-preview-frame"></iframe>
-                            <div class="pdf-preview-info">
-                                <h4>Product Catalog 1</h4>
-                                <span><i class="fas fa-external-link-alt"></i> View PDF</span>
+                        <div class="sub-dropdown-menu">
+                            <a href="dancing.html" class="dropdown-item">
+                                <i class="fas fa-music"></i> Dancing
+                            </a>
+                            <a href="violin.html" class="dropdown-item">
+                                <img src="icon/violin-pink.png" class="custom-icon" alt=""> Violin
+                            </a>
+                            <a href="songs.html" class="dropdown-item">
+                                <i class="fas fa-microphone"></i> Songs
+                            </a>
+                            <a href="drawing.html" class="dropdown-item">
+                                <i class="fas fa-paint-brush"></i> Drawing
+                            </a>
+                            <div class="sub-dropdown">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-heart"></i> Charity Exhibition
+                                </a>
+                                <div class="sub-dropdown-menu">
+                                    <a href="charity-exhibition-2016.html" class="dropdown-item">
+                                        <i class="fas fa-calendar"></i> 2016
+                                    </a>
+                                    <a href="charity-exhibition-2023.html" class="dropdown-item">
+                                        <i class="fas fa-calendar"></i> 2023
+                                    </a>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="pdf-preview-card">
-                        <a href="documents/Cultural and creative products2.pdf" target="_blank">
-                            <iframe src="documents/Cultural and creative products2.pdf#page=1&view=FitH" class="pdf-preview-frame"></iframe>
-                            <div class="pdf-preview-info">
-                                <h4>Product Catalog 2</h4>
-                                <span><i class="fas fa-external-link-alt"></i> View PDF</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="pdf-preview-card">
-                        <a href="documents/Cultural and creative products3.pdf" target="_blank">
-                            <iframe src="documents/Cultural and creative products3.pdf#page=1&view=FitH" class="pdf-preview-frame"></iframe>
-                            <div class="pdf-preview-info">
-                                <h4>Product Catalog 3</h4>
-                                <span><i class="fas fa-external-link-alt"></i> View PDF</span>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="volunteer.html" class="dropdown-item">
+                        <i class="fas fa-hands-helping"></i> Volunteer
+                    </a>
+                    <a href="cultural-products.html" class="dropdown-item">
+                        <i class="fas fa-gift"></i> Cultural Products
+                    </a>
                 </div>
             </div>
-
-            <!-- Back Button -->
-            <div class="back-navigation">
-                <a href="index.html" class="btn btn-secondary">
-                    <i class="fas fa-arrow-left"></i>
-                    Back to Home
-                </a>
-            </div>
+            <a href="index.html#achievements" class="nav-link">
+                <i class="fas fa-trophy"></i>
+                <span>Awards</span>
+            </a>
+            <a href="index.html#about" class="nav-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </a>
+            <a href="index.html#about" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
         </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" id="lightbox-close">&times;</span>
-        <img src="" alt="Enlarged image" id="lightbox-img">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
+</nav>
 
-    <script src="script.js"></script>
-    <script>
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxClose = document.getElementById('lightbox-close');
-        const productImages = document.querySelectorAll('.product-item img');
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="page-header-content">
+            <div class="page-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h1>Cultural and Creative Products</h1>
+            <p>Original merchandise and creative product design</p>
+        </div>
+    </div>
+</section>
 
-        productImages.forEach(img => {
-            img.addEventListener('click', () => {
-                lightbox.classList.add('active');
-                lightboxImg.src = img.src;
-                document.body.style.overflow = 'hidden';
-            });
+<!-- Main Content -->
+<section class="portfolio-content">
+    <div class="container">
+        <!-- Stats -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <span class="stat-number">3,000</span>
+                <span class="stat-label">RMB Earned</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">7+</span>
+                <span class="stat-label">Product Types</span>
+            </div>
+            <!--                <div class="stat-item">-->
+            <!--                    <span class="stat-number">Gift Box</span>-->
+            <!--                    <span class="stat-label">Complete Set</span>-->
+            <!--                </div>-->
+        </div>
+
+
+        <!-- Product Description -->
+        <div class="content-section">
+            <h2><i class="fas fa-box-open"></i> Gift Box Collection</h2>
+            <div class="content-card featured">
+                <p>The cultural and creative products include eternal pencils, erasers, pencil sharpeners, notebooks,
+                    stickers, magnetic bookmarks, and pencil cases, all packaged in a gift box set. Earned 3,000 RMB
+                    from sales.</p>
+            </div>
+        </div>
+
+        <!-- Product List -->
+        <div class="content-section">
+            <h2><i class="fas fa-list"></i> Product Collection</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h4>Eternal Pencils</h4>
+                    <p>Innovative pencils with unique designs</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-eraser"></i>
+                    </div>
+                    <h4>Erasers</h4>
+                    <p>Custom-designed erasers</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h4>Pencil Sharpeners</h4>
+                    <p>Artistic sharpener designs</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Notebooks</h4>
+                    <p>Creative cover illustrations</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h4>Stickers</h4>
+                    <p>Original artwork sticker sets</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <h4>Magnetic Bookmarks</h4>
+                    <p>Functional art bookmarks</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Pencil Cases</h4>
+                    <p>Designed storage solutions</p>
+                </div>
+                <div class="product-card gift-box">
+                    <div class="product-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h4>Complete Gift Box Set</h4>
+                    <p>All items packaged together</p>
+                </div>
+            </div>
+        </div>
+        <!-- Product Gallery - Version 1 -->
+        <div class="content-section">
+            <h2><i class="fas fa-images"></i> Product Gallery - Version 1</h2>
+            <div class="products-gallery">
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115100959_57_61.jpg" alt="Cultural Creative Product">
+                </div>
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115100959_58_61.jpg" alt="Cultural Creative Product">
+                </div>
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115100959_59_61.jpg" alt="Cultural Creative Product">
+                </div>
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115101000_60_61.png" alt="Cultural Creative Product">
+                </div>
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115101018_62_61.png" alt="Cultural Creative Product">
+                </div>
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115101019_63_61.jpg" alt="Cultural Creative Product">
+                </div>
+                <div class="product-item">
+                    <img src="images/products/version1/Image_20260115101019_64_61.png" alt="Cultural Creative Product">
+                </div>
+            </div>
+        </div>
+        <!-- Product Gallery - Version 2 (Octopus) -->
+        <div class="content-section">
+            <h2><i class="fas fa-camera"></i> Product Gallery - Version 2</h2>
+            <div class="products-gallery">
+                <div class="product-item">
+                    <img src="images/products/version2/Image_20260115101233_67_61.png" alt="Octopus Product">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Octopus Package</p>
+                    <img src="images/products/version2/octopusPackage.png" alt="Octopus Package">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Octopus Sticker</p>
+                    <img src="images/products/version2/octopusSticker.png" alt="Octopus Sticker">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Octopus Magnetic Bookmark</p>
+                    <img src="images/products/version2/octopusMagnetBookMark.png" alt="Octopus Magnetic Bookmark">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Octopus Magnet Back</p>
+                    <img src="images/products/version2/octopusMagnetBack.png" alt="Octopus Magnet Back">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Octopus Pencil Box</p>
+                    <img src="images/products/version2/octopusPencilBoxFrontBack.png" alt="Octopus Pencil Box">
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Gallery - Version 3 (Monkey) -->
+        <div class="content-section">
+            <h2><i class="fas fa-camera"></i> Product Gallery - Version 3</h2>
+            <div class="products-gallery">
+                <div class="product-item">
+                    <p class="product-label">Monkey Package</p>
+                    <img src="images/products/version3/monkeyPackage.png" alt="Monkey Package">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Monkey Sticker 1</p>
+                    <img src="images/products/version3/monkeySticker1.png" alt="Monkey Sticker 1">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Monkey Sticker 2</p>
+                    <img src="images/products/version3/monkeySticker2.png" alt="Monkey Sticker 2">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Monkey Bookmark 1</p>
+                    <img src="images/products/version3/monkeyBookMark1.png" alt="Monkey Bookmark 1">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Monkey Bookmark 2</p>
+                    <img src="images/products/version3/monkeyBookMark2.png" alt="Monkey Bookmark 2">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Monkey Bookmark 3</p>
+                    <img src="images/products/version3/monkeyBookMark3.png" alt="Monkey Bookmark 3">
+                </div>
+                <div class="product-item">
+                    <p class="product-label">Monkey Pencil Box</p>
+                    <img src="images/products/version3/monkeyPencilBox.png" alt="Monkey Pencil Box">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Back Button -->
+        <div class="back-navigation">
+            <a href="index.html" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="Enlarged image" id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const productImages = document.querySelectorAll('.product-item img');
+
+    productImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.classList.add('active');
+            lightboxImg.src = img.src;
+            document.body.style.overflow = 'hidden';
         });
+    });
 
-        lightboxClose.addEventListener('click', () => {
+    lightboxClose.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
             lightbox.classList.remove('active');
             document.body.style.overflow = 'auto';
-        });
+        }
+    });
 
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-    </script>
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+</script>
 </body>
 </html>

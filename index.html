@@ -9,617 +9,673 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Athena Bi</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <span class="logo-text">Athena Bi</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <a href="#home" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <div class="nav-dropdown">
+                <a href="#" class="nav-link dropdown-toggle">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Project</span>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
                 </a>
-                <a href="#about" class="nav-link">
-                    <i class="fas fa-user"></i>
-                    <span>About</span>
-                </a>
-                <a href="#projects" class="nav-link">
-                    <i class="fas fa-code"></i>
-                    <span>Projects</span>
-                </a>
-                <a href="#achievements" class="nav-link">
-                    <i class="fas fa-trophy"></i>
-                    <span>Achievements</span>
-                </a>
-                <div class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">
-                        <i class="fas fa-folder-open"></i>
-                        <span>Portfolio</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                <div class="dropdown-menu">
+                    <a href="programming.html" class="dropdown-item">
+                        <i class="fas fa-code"></i> Coding
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="programming.html" class="dropdown-item">
-                            <i class="fas fa-code"></i> Programming
+                    <a href="storybook.html" class="dropdown-item">
+                        <i class="fas fa-book"></i> Writing
+                    </a>
+                    <div class="sub-dropdown">
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-palette"></i> Art
                         </a>
-                        <a href="dancing.html" class="dropdown-item">
-                            <i class="fas fa-music"></i> Solo Dancing
-                        </a>
-                        <a href="storybook.html" class="dropdown-item">
-                            <i class="fas fa-book"></i> Published Story Book
-                        </a>
-                        <a href="violin.html" class="dropdown-item">
-                            <img src="icon/violin-pink.png" class="custom-icon" alt=""> Violin
-                        </a>
-                        <a href="songs.html" class="dropdown-item">
-                            <i class="fas fa-microphone"></i> Songs
-                        </a>
-                        <a href="volunteer.html" class="dropdown-item">
-                            <i class="fas fa-hands-helping"></i> Volunteer
-                        </a>
-                        <a href="charity-exhibition.html" class="dropdown-item">
-                            <i class="fas fa-palette"></i> Art Charity Exhibition
-                        </a>
-                        <a href="cultural-products.html" class="dropdown-item">
-                            <i class="fas fa-gift"></i> Cultural Products
-                        </a>
+                        <div class="sub-dropdown-menu">
+                            <a href="dancing.html" class="dropdown-item">
+                                <i class="fas fa-music"></i> Dancing
+                            </a>
+                            <a href="violin.html" class="dropdown-item">
+                                <img src="icon/violin-pink.png" class="custom-icon" alt=""> Violin
+                            </a>
+                            <a href="songs.html" class="dropdown-item">
+                                <i class="fas fa-microphone"></i> Songs
+                            </a>
+                            <a href="drawing.html" class="dropdown-item">
+                                <i class="fas fa-paint-brush"></i> Drawing
+                            </a>
+                            <div class="sub-dropdown">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-heart"></i> Charity Exhibition
+                                </a>
+                                <div class="sub-dropdown-menu">
+                                    <a href="charity-exhibition-2016.html" class="dropdown-item">
+                                        <i class="fas fa-calendar"></i> 2016
+                                    </a>
+                                    <a href="charity-exhibition-2023.html" class="dropdown-item">
+                                        <i class="fas fa-calendar"></i> 2023
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <a href="volunteer.html" class="dropdown-item">
+                        <i class="fas fa-hands-helping"></i> Volunteer
+                    </a>
+                    <a href="cultural-products.html" class="dropdown-item">
+                        <i class="fas fa-gift"></i> Cultural Products
+                    </a>
                 </div>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#achievements" class="nav-link">
+                <i class="fas fa-trophy"></i>
+                <span>Awards</span>
+            </a>
+            <a href="#about" class="nav-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </a>
+            <a href="#about" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="greeting">
-                        <span class="wave">👋</span>
-                        <span>Hello, I'm</span>
-                    </div>
-                    <h1 class="hero-name">Athena Bi</h1>
-                    <div class="hero-subtitle">
-                        <span class="typing-text" data-text='["Student at Los Alamitos High School",  "Violinist & Composer", "Published Author"]'>Student at Los Alamitos High School</span>
-                    </div>
-                    <p class="hero-description">
-                        12th grade student passionate about technology, music, and literature. Ready to contribute to a diverse college community with my multidisciplinary background in programming, music composition, and creative writing.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">12th</span>
-                            <span class="stat-label">Grade Level</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">2000+</span>
-                            <span class="stat-label">Books Read</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Published Works</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">8+</span>
-                            <span class="stat-label">Skills</span>
-                        </div>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-code"></i>
-                            View Academic Work
-                        </a>
-<!--                        <button class="btn btn-secondary">-->
-<!--                            <i class="fas fa-download"></i>-->
-<!--                            Download Resume-->
-<!--                        </button>-->
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <img src="images/athenas.jpg" alt="Athena Bi">
-                            <div class="status-indicator"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h3>Athena Bi (毕兰婷)</h3>
-                            <p>Los Alamitos High School</p>
-                            <p>12th Grade Student</p>
-                        </div>
-                        <div class="floating-icons">
-                            <div class="floating-icon" style="--delay: 0s;">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s;">
-                                <i class="fas fa-music"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s;">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 3s;">
-                                <i class="fas fa-music"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="school-image">
-                        <img src="images/los-alamitos-high-school-stem-building-2.jpg" alt="Los Alamitos High School STEM Building" />
-                        <div class="image-overlay">
-                            <i class="fas fa-university"></i>
-                        </div>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <span>Hello, I'm</span>
+                </div>
+                <h1 class="hero-name">Athena Bi</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"
+                          data-text='["Student at Los Alamitos High School",  "Violinist & Composer", "Published Author"]'>Student at Los Alamitos High School</span>
+                </div>
+                <p class="hero-description">
+                    12th grade student passionate about technology, music, and literature. Ready to contribute to a
+                    diverse college community with my multidisciplinary background in programming, music composition,
+                    and creative writing.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">12th</span>
+                        <span class="stat-label">Grade Level</span>
                     </div>
-                    <h3>Academic Profile</h3>
-                    <div class="academic-info">
-                        <p><strong>School:</strong> Los Alamitos High School</p>
-                        <p><strong>Grade:</strong> 12th Grade</p>
-                        <p><strong>Location:</strong> California, USA</p>
-                        <p><strong>Previous:</strong> Stanley G. Oswalt Academy</p>
-                        <p><strong>International Experience:</strong> Shanghai World Foreign Language Elementary School</p>
+                    <div class="stat">
+                        <span class="stat-number">2000+</span>
+                        <span class="stat-label">Books Read</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Published Works</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Skills</span>
                     </div>
                 </div>
-
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-atom"></i>
-                    </div>
-                    <h3>Academic Interests</h3>
-                    <div class="interests-grid">
-                        <div class="interest-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Computer Science</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-music"></i>
-                            <span>Music Theory & Composition</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-pen-fancy"></i>
-                            <span>Creative Writing</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-gamepad"></i>
-                            <span>Game Development</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Skills & Talents</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Programming</span>
-                        <span class="skill-tag">Violin (Grade 8)</span>
-                        <span class="skill-tag">Piano</span>
-                        <span class="skill-tag">Music Composition</span>
-                        <span class="skill-tag">Creative Writing</span>
-                        <span class="skill-tag">Game Development</span>
-                        <span class="skill-tag">Art & Painting</span>
-                        <span class="skill-tag">Dance</span>
-                        <span class="skill-tag">Taekwondo</span>
-                    </div>
-                </div>
-
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Background & Journey</h3>
-                    <div class="journey-timeline">
-                        <div class="timeline-item">
-                            <span class="year">2008</span>
-                            <span class="event">Born in Shanghai, China</span>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="year">2016</span>
-                            <span class="event">Moved to USA for education</span>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="year">2024</span>
-                            <span class="event">Senior at Los Alamitos High School</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects & Research</h2>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>The Abandoned Village</h3>
-                        <p>Mobile game application developed and published on Apple's official platform in October 2021. Features immersive gameplay and engaging storytelling.</p>
-                        <div class="project-tags">
-                            <span class="tag">Game Development</span>
-                            <span class="tag">iOS</span>
-                            <span class="tag">Published</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="status-badge">Published on App Store</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Academic Conference Paper</h3>
-                        <p>"A Comprehensive Web Application for Art Showcasing Utilizing Generative AI for Art Therapy Applications" - Submitted to 11th International Conference on Advances in Computer Science and Information Technology (ACSTY 2025) in Zurich, Switzerland.</p>
-                        <div class="project-tags">
-                            <span class="tag">Research Paper</span>
-                            <span class="tag">International Conference</span>
-                            <span class="tag">AI/ML</span>
-                            <span class="tag">Art Therapy</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="status-badge">Conference Submission</span>
-                        </div>
-                        <br>
-                        <a href="Athena_paper.pdf" download="Athena_paper.pdf" class="btn btn-secondary">
-                            <i class="fas fa-download"></i>
-                            Download Research Paper
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Reading & Art Therapy Platform</h3>
-                        <p>Developed comprehensive platform combining reading games with art therapy techniques to promote mental wellness and educational engagement.</p>
-                        <div class="project-tags">
-                            <span class="tag">Platform Development</span>
-                            <span class="tag">Therapy</span>
-                            <span class="tag">Education</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Published Novels on Wattpad</h3>
-                        <p>Authored and completed multiple novels including "Not Meant To Be," "The hellLands," "Hunted || MCYT Fantasy AU," and "Demigod SMP."</p>
-                        <div class="project-tags">
-                            <span class="tag">Creative Writing</span>
-                            <span class="tag">Fantasy</span>
-                            <span class="tag">Published</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Music Composition & Performance</h3>
-                        <p>Released multiple singles including "Dream" (2020) and "这个世界在等你去发现惊喜" (2020), plus albums "我的花园" (2016) and "My Heart Is Happy" (2017). First chair violinist in school orchestra and self-formed band.</p>
-                        <div class="project-tags">
-                            <span class="tag">Music Composition</span>
-                            <span class="tag">Violin Performance</span>
-                            <span class="tag">Leadership</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience & Leadership</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Concertmaster - School Orchestra</h3>
-                        <p>Led as concertmaster in school orchestra, demonstrating musical leadership and excellence in ensemble performance.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Band Founder & First Violin</h3>
-                        <p>Co-founded student band with classmates, serving as first chair violinist and contributing to group leadership.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Charity Art Exhibition Organizer</h3>
-                        <p>Organized 2 charity art exhibitions raising 320,000 RMB for underprivileged students and children with autism.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & Recognition</h2>
-            <div class="achievements-grid">
-                <div class="achievement-category">
-                    <h3><i class="fas fa-medal"></i> Academic & Competition Awards</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <i class="fas fa-trophy"></i>
-                            <div>
-                                <h4>Global Game Development Competition</h4>
-                                <p>19th place out of 500 participants (2021)</p>
-                                <p>14th place out of 550 participants (2022)</p>
-                                <p>2nd place (top 5%) out of 920 participants (2025)</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-microscope"></i>
-                            <div>
-                                <h4>2025 US Biology Olympiad</h4>
-                                <p>Semi-finalist (2025)</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-certificate"></i>
-                            <div>
-                                <h4>Patent Application</h4>
-                                <p>AI Art Therapy Web Application (Patent #63/734,039)</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-certificate"></i>
-                            <div>
-                                <h4>National Children's Creative Art Contest</h4>
-                                <p>Special Gold Award for "太阳向日葵" (2012)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="achievement-category">
-                    <h3><i class="fas fa-music"></i> Musical Achievements</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <i class="fas fa-star"></i>
-                            <div>
-                                <h4>Dance Competition Achievements</h4>
-                                <p>Secured Double Platinum, Overall High Point, and 1st Place titles at Showstopper, Rainbow, and NEXTSTAR nationals</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-fist-raised"></i>
-                            <div>
-                                <h4>Taekwondo Achievements</h4>
-                                <p>Black Belt (2020)</p>
-                                <p>California State Open: Gold Medal (Poomsae)</p>
-                                <p>California State Open: Silver Medal (Sparring)</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-music"></i>
-                            <div>
-                                <h4>Musical Leadership & Performance</h4>
-                                <p>Orchestra Concertmaster/First Chair Violin</p>
-                                <p>ABRSM Grade 8 Violin Certification</p>
-                                <p>Self-formed Student Band Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="achievement-category">
-                    <h3><i class="fas fa-book"></i> Literary & Creative Work</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <h4>Published Music</h4>
-                                <p>Composed and globally released 14 songs since 2016</p>
-                                <p>Songs available in 100,000+ KTV rooms across China</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <div>
-                                <h4>App Store Publication</h4>
-                                <p>"The Abandoned Village" - Official Apple Platform (2021)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="achievement-category">
-                    <h3><i class="fas fa-heart"></i> Community Service & Charity</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <i class="fas fa-palette"></i>
-                            <div>
-                                <h4>Charity Art Exhibitions</h4>
-                                <p>Organized 2 exhibitions raising ¥320,000 total</p>
-                                <p>¥120,000 for education, ¥200,000 for autism support</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <h4>Early Recognition</h4>
-                                <p>Porsche Model Competition: Most Sparkling Eyes Award (2010)</p>
-                                <p>National Art Contest: Special Gold Award for "太阳向日葵" (2012)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Highlights Section -->
-    <section id="activities" class="activities">
-        <div class="container">
-            <h2 class="section-title">Portfolio Highlights</h2>
-            <div class="activities-grid">
-                <a href="programming.html" class="activity-card clickable">
-                    <div class="activity-icon">
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Programming</h3>
-                    <p>Selected among 297 finalists from 8 countries. Ranked top 5% in international coding competitions.</p>
-                    <div class="activity-stats">
-                        <span class="stat">Top 5%</span>
-                        <span class="stat">8 Countries</span>
-                    </div>
-                </a>
-
-                <a href="dancing.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3>Solo Dancing</h3>
-                    <p>Double Platinum, Overall High Point, and 1st Place titles at Showstopper, Rainbow, and NEXTSTAR nationals.</p>
-                    <div class="activity-stats">
-                        <span class="stat">Double Platinum</span>
-                        <span class="stat">1st Place</span>
-                    </div>
-                </a>
-
-                <a href="storybook.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Published Story Book</h3>
-                    <p>"We Don't Deserve This" - A fantasy novel published by Page Publishing, available on Amazon, Apple, and more.</p>
-                    <div class="activity-stats">
-                        <span class="stat">$200 Earned</span>
-                        <span class="stat">5+ Novels</span>
-                    </div>
-                </a>
-
-                <a href="violin.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <img src="icon/violin-icon-black.png" class="activity-custom-icon" alt="Violin">
-                    </div>
-                    <h3>Violin</h3>
-                    <p>Concertmaster in school orchestra and self-formed student band. ABRSM Grade 8 certification.</p>
-                    <div class="activity-stats">
-                        <span class="stat">Grade 8 ABRSM</span>
-                        <span class="stat">Concertmaster</span>
-                    </div>
-                </a>
-
-                <a href="songs.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <i class="fas fa-microphone"></i>
-                    </div>
-                    <h3>Songs</h3>
-                    <p>Composed and globally released 14 songs since 2016. Featured in 100,000+ KTV rooms across China.</p>
-                    <div class="activity-stats">
-                        <span class="stat">14 Songs</span>
-                        <span class="stat">Global Release</span>
-                    </div>
-                </a>
-
-                <a href="volunteer.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Volunteer</h3>
-                    <p>Community service and charity performance organizer, reaching schools and children across multiple regions.</p>
-                    <div class="activity-stats">
-                        <span class="stat">622 Children</span>
-                        <span class="stat">6 Schools</span>
-                    </div>
-                </a>
-
-                <a href="charity-exhibition.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Art Charity Exhibition</h3>
-                    <p>Organized 2 charity art exhibitions raising 320,000 RMB for underprivileged students and autism support.</p>
-                    <div class="activity-stats">
-                        <span class="stat">320K RMB</span>
-                        <span class="stat">2 Exhibitions</span>
-                    </div>
-                </a>
-
-                <a href="cultural-products.html" class="activity-card clickable">
-                    <div class="activity-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h3>Cultural Products</h3>
-                    <p>Designed cultural and creative products including pencils, notebooks, stickers, and gift box sets.</p>
-                    <div class="activity-stats">
-                        <span class="stat">3,000 RMB</span>
-                        <span class="stat">7+ Products</span>
-                    </div>
-                </a>
+                        View Academic Work
+                    </a>
+                    <!--                        <button class="btn btn-secondary">-->
+                    <!--                            <i class="fas fa-download"></i>-->
+                    <!--                            Download Resume-->
+                    <!--                        </button>-->
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2>Ready to Learn More?</h2>
-                <p>Thank you for reviewing my portfolio. I'm excited about the opportunity to contribute to your college community and continue my academic journey.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Los Alamitos High School - 12th Grade</span>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/athenas.jpg" alt="Athena Bi">
+                        <div class="status-indicator"></div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>California, USA</span>
+                    <div class="profile-info">
+                        <h3>Athena Bi (毕兰婷)</h3>
+                        <p>Los Alamitos High School</p>
+                        <p>12th Grade Student</p>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" style="--delay: 0s;">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s;">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 2s;">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 3s;">
+                            <i class="fas fa-music"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="school-image">
+                    <img src="images/los-alamitos-high-school-stem-building-2.jpg"
+                         alt="Los Alamitos High School STEM Building"/>
+                    <div class="image-overlay">
+                        <i class="fas fa-university"></i>
+                    </div>
+                </div>
+                <h3>Academic Profile</h3>
+                <div class="academic-info">
+                    <p><strong>School:</strong> Los Alamitos High School</p>
+                    <p><strong>Grade:</strong> 12th Grade</p>
+                    <p><strong>Location:</strong> California, USA</p>
+                    <p><strong>Previous:</strong> Stanley G. Oswalt Academy</p>
+                    <p><strong>International Experience:</strong> Shanghai World Foreign Language Elementary School</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <h3>Academic Interests</h3>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Computer Science</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-music"></i>
+                        <span>Music Theory & Composition</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-pen-fancy"></i>
+                        <span>Creative Writing</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Game Development</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Skills & Talents</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Programming</span>
+                    <span class="skill-tag">Violin (Grade 8)</span>
+                    <span class="skill-tag">Piano</span>
+                    <span class="skill-tag">Music Composition</span>
+                    <span class="skill-tag">Creative Writing</span>
+                    <span class="skill-tag">Game Development</span>
+                    <span class="skill-tag">Art & Painting</span>
+                    <span class="skill-tag">Dance</span>
+                    <span class="skill-tag">Taekwondo</span>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Background & Journey</h3>
+                <div class="journey-timeline">
+                    <div class="timeline-item">
+                        <span class="year">2008</span>
+                        <span class="event">Born in Shanghai, China</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2016</span>
+                        <span class="event">Moved to USA for education</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <span class="event">Senior at Los Alamitos High School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projects & Research</h2>
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="project-content">
+                    <h3>The Abandoned Village</h3>
+                    <p>Mobile game application developed and published on Apple's official platform in October 2021.
+                        Features immersive gameplay and engaging storytelling.</p>
+                    <div class="project-tags">
+                        <span class="tag">Game Development</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">Published</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="status-badge">Published on App Store</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Academic Conference Paper</h3>
+                    <p>"A Comprehensive Web Application for Art Showcasing Utilizing Generative AI for Art Therapy
+                        Applications" - Submitted to 11th International Conference on Advances in Computer Science and
+                        Information Technology (ACSTY 2025) in Zurich, Switzerland.</p>
+                    <div class="project-tags">
+                        <span class="tag">Research Paper</span>
+                        <span class="tag">International Conference</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Art Therapy</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="status-badge">Conference Submission</span>
+                    </div>
+                    <br>
+                    <a href="Athena_paper.pdf" download="Athena_paper.pdf" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Research Paper
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Reading & Art Therapy Platform</h3>
+                    <p>Developed comprehensive platform combining reading games with art therapy techniques to promote
+                        mental wellness and educational engagement.</p>
+                    <div class="project-tags">
+                        <span class="tag">Platform Development</span>
+                        <span class="tag">Therapy</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Published Novels on Wattpad</h3>
+                    <p>Authored and completed multiple novels including "Not Meant To Be," "The hellLands," "Hunted ||
+                        MCYT Fantasy AU," and "Demigod SMP."</p>
+                    <div class="project-tags">
+                        <span class="tag">Creative Writing</span>
+                        <span class="tag">Fantasy</span>
+                        <span class="tag">Published</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Music Composition & Performance</h3>
+                    <p>Released multiple singles including "Dream" (2020) and "这个世界在等你去发现惊喜" (2020), plus
+                        albums "我的花园" (2016) and "My Heart Is Happy" (2017). First chair violinist in school
+                        orchestra and self-formed band.</p>
+                    <div class="project-tags">
+                        <span class="tag">Music Composition</span>
+                        <span class="tag">Violin Performance</span>
+                        <span class="tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">Experience & Leadership</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Concertmaster - School Orchestra</h3>
+                    <p>Led as concertmaster in school orchestra, demonstrating musical leadership and excellence in
+                        ensemble performance.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Band Founder & First Violin</h3>
+                    <p>Co-founded student band with classmates, serving as first chair violinist and contributing to
+                        group leadership.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Charity Art Exhibition Organizer</h3>
+                    <p>Organized 2 charity art exhibitions raising 320,000 RMB for underprivileged students and children
+                        with autism.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Volunteer Teacher - IUSD</h3>
+                    <p>Teach Scratch to K–3 students and Python fundamentals to Grades 4–6 in the Irvine Unified School District, helping young learners build problem-solving skills, computational thinking, and confidence in computer science.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements">
+    <div class="container">
+        <h2 class="section-title">Achievements & Recognition</h2>
+        <div class="achievements-grid">
+            <div class="achievement-category">
+                <h3><i class="fas fa-medal"></i> Academic & Competition Awards</h3>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <i class="fas fa-trophy"></i>
+                        <div>
+                            <h4>Global Game Development Competition</h4>
+                            <p>19th place out of 500 participants (2021)</p>
+                            <p>14th place out of 550 participants (2022)</p>
+                            <p>2nd place (top 5%) out of 920 participants (2025)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-microscope"></i>
+                        <div>
+                            <h4>2025 US Biology Olympiad</h4>
+                            <p>Semi-finalist (2025)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>Patent Application</h4>
+                            <p>AI Art Therapy Web Application (Patent #63/734,039)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item" style="flex-wrap: wrap;">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>National Children's Creative Art Contest</h4>
+                            <p>Special Gold Award for
+                                "太阳向日葵 - Sunflower" (2012)</p>
+                        </div>
+                        <div style="width: 100%; display: flex; justify-content: center; margin-top: 15px;">
+                            <img src="images/sunflower.jpg"
+                                 style="max-width: 200px; width: 100%; height: auto; border-radius: 8px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-category">
+                <h3><i class="fas fa-music"></i> Musical Achievements</h3>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h4>Dance Competition Achievements</h4>
+                            <p>Secured Double Platinum, Overall High Point, and 1st Place titles at Showstopper,
+                                Rainbow, and NEXTSTAR nationals</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-fist-raised"></i>
+                        <div>
+                            <h4>Taekwondo Achievements</h4>
+                            <p>Black Belt (2020)</p>
+                            <p>California State Open: Gold Medal (Poomsae)</p>
+                            <p>California State Open: Silver Medal (Sparring)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-music"></i>
+                        <div>
+                            <h4>Musical Leadership & Performance</h4>
+                            <p>Orchestra Concertmaster/First Chair Violin</p>
+                            <p>ABRSM Grade 8 Violin Certification</p>
+                            <p>Self-formed Student Band Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-category">
+                <h3><i class="fas fa-book"></i> Literary & Creative Work</h3>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Published Music</h4>
+                            <p>Composed and globally released 14 songs since 2016</p>
+                            <p>Songs available in 100,000+ KTV rooms across China</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h4>App Store Publication</h4>
+                            <p>"The Abandoned Village" - Official Apple Platform (2021)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-category">
+                <h3><i class="fas fa-heart"></i> Community Service & Charity</h3>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <i class="fas fa-palette"></i>
+                        <div>
+                            <h4>Charity Art Exhibitions</h4>
+                            <p>Organized 2 exhibitions raising ¥320,000 total</p>
+                            <p>¥120,000 for education, ¥200,000 for autism support</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Early Recognition</h4>
+                            <p>Porsche Model Competition: Most Sparkling Eyes Award (2010)</p>
+                            <p>National Art Contest: Special Gold Award for "太阳向日葵" (2012)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Highlights Section -->
+<section id="activities" class="activities">
+    <div class="container">
+        <h2 class="section-title">Portfolio Highlights</h2>
+        <div class="activities-grid">
+            <a href="programming.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Programming</h3>
+                <p>Selected among 297 finalists from 8 countries. Ranked top 3 in international coding
+                    competitions.</p>
+                <div class="activity-stats">
+                    <span class="stat">Top 3%</span>
+                    <span class="stat">8 Countries</span>
+                </div>
+            </a>
+
+            <a href="dancing.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Dancing</h3>
+                <p>Double Platinum, Overall High Point, and 1st Place titles at Showstopper, Rainbow, and NEXTSTAR
+                    nationals.</p>
+                <div class="activity-stats">
+                    <span class="stat">Double Platinum</span>
+                    <span class="stat">1st Place</span>
+                </div>
+            </a>
+
+            <a href="storybook.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Published Story Book</h3>
+                <p>"We Don't Deserve This" - A fantasy novel published by Page Publishing, available on Amazon, Apple,
+                    and more.</p>
+                <div class="activity-stats">
+                    <span class="stat">$200 Earned</span>
+                    <span class="stat">5+ Novels</span>
+                </div>
+            </a>
+
+            <a href="violin.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <img src="icon/violin-icon-black.png" class="activity-custom-icon" alt="Violin">
+                </div>
+                <h3>Violin</h3>
+                <p>Concertmaster in school orchestra and self-formed student band. ABRSM Grade 8 certification.</p>
+                <div class="activity-stats">
+                    <span class="stat">Grade 8 ABRSM</span>
+                    <span class="stat">Concertmaster</span>
+                </div>
+            </a>
+
+            <a href="songs.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3>Songs</h3>
+                <p>Composed and globally released 14 songs since 2016. Featured in 100,000+ KTV rooms across China.</p>
+                <div class="activity-stats">
+                    <span class="stat">14 Songs</span>
+                    <span class="stat">Global Release</span>
+                </div>
+            </a>
+
+            <a href="volunteer.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3>Volunteer</h3>
+                <p>Community service and charity performance organizer, reaching schools and children across multiple regions. Volunteer teacher in IUSD teaching Scratch and Python to K-6 students.</p>
+                <div class="activity-stats">
+                    <span class="stat">IUSD Teacher</span>
+                    <span class="stat">China Outreach</span>
+                </div>
+            </a>
+
+            <a href="charity-exhibition.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Art Charity Exhibition</h3>
+                <p>Organized 2 charity art exhibitions raising 320,000 RMB for underprivileged students and autism
+                    support.</p>
+                <div class="activity-stats">
+                    <span class="stat">320K RMB</span>
+                    <span class="stat">2 Exhibitions</span>
+                </div>
+            </a>
+
+            <a href="cultural-products.html" class="activity-card clickable">
+                <div class="activity-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Cultural Products</h3>
+                <p>Designed cultural and creative products including pencils, notebooks, stickers, and gift box
+                    sets.</p>
+                <div class="activity-stats">
+                    <span class="stat">3,000 RMB</span>
+                    <span class="stat">7+ Products</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <h2>Ready to Learn More?</h2>
+            <p>Thank you for reviewing my portfolio. I'm excited about the opportunity to contribute to your college
+                community and continue my academic journey.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Los Alamitos High School - 12th Grade</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>California, USA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

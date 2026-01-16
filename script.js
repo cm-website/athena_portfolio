@@ -219,7 +219,14 @@ function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
 
     counters.forEach(counter => {
-        const target = counter.textContent.replace(/[^0-9]/g, '');
+        const originalText = counter.textContent;
+        const target = originalText.replace(/[^0-9]/g, '');
+
+        // Skip animation if no numbers in the text
+        if (!target || target === '') {
+            return;
+        }
+
         const increment = target / 200;
         let current = 0;
 
@@ -231,7 +238,6 @@ function animateCounters() {
             }
 
             // Preserve original formatting (like + suffix)
-            const originalText = counter.textContent;
             const suffix = originalText.replace(/[0-9]/g, '');
             counter.textContent = Math.floor(current) + suffix;
         }, 10);
