@@ -1438,6 +1438,65 @@ a.activity-card.clickable p {
     line-height: 1.7;
 }
 
+/* Stage Header Styling */
+.stage-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.stage-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    opacity: 0.9;
+}
+
+.stage-title-wrapper {
+    flex: 1;
+}
+
+.stage-title-wrapper h2 {
+    margin-bottom: 0.25rem;
+}
+
+.stage-subtitle {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.stage-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, rgba(249, 168, 201, 0.08) 0%, rgba(196, 181, 253, 0.08) 100%);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;
+    position: relative;
+}
+
+.stage-description::before {
+    content: '\201C';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-family: Georgia, serif;
+}
+
 /* Content Card */
 .content-card {
     background: white;
@@ -2613,5 +2672,23 @@ a.activity-card.clickable p {
     .outreach-stats {
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    /* Stage Header Responsive */
+    .stage-header {
+        gap: 1rem;
+    }
+
+    .stage-number {
+        font-size: 2.5rem;
+    }
+
+    .stage-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .stage-description {
+        font-size: 0.95rem;
+        padding: 0.875rem 1rem;
     }
 }
