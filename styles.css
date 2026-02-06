@@ -269,7 +269,7 @@ body {
     z-index: 1002;
 }
 
-.sub-dropdown:hover .sub-dropdown-menu {
+.sub-dropdown:hover > .sub-dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(5px);
@@ -1196,9 +1196,8 @@ a.activity-card.clickable p {
         transition: max-height var(--transition-base);
     }
 
-    .nav-dropdown:hover .dropdown-menu,
     .nav-dropdown.active .dropdown-menu {
-        max-height: 500px;
+        max-height: 1000px;
         padding: 0.5rem 0;
         transform: none;
     }
@@ -1215,15 +1214,17 @@ a.activity-card.clickable p {
         visibility: visible;
         box-shadow: none;
         border: none;
+        background: transparent;
+        padding: 0;
         padding-left: 1rem;
+        min-width: 0;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
 
-    .sub-dropdown:hover .sub-dropdown-menu,
-    .sub-dropdown.active .sub-dropdown-menu {
-        max-height: 500px;
+    .sub-dropdown.active > .sub-dropdown-menu {
+        max-height: 800px;
     }
 
     .sub-dropdown-menu .dropdown-item {
@@ -1247,8 +1248,8 @@ a.activity-card.clickable p {
         transform: rotate(90deg);
     }
 
-    .sub-dropdown:hover > .dropdown-item::after {
-        transform: rotate(90deg) translateX(0);
+    .sub-dropdown.active > .dropdown-item::after {
+        transform: rotate(270deg);
     }
 
     .hero-content {

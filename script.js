@@ -71,12 +71,29 @@ navLinks.forEach(link => {
     });
 });
 
-// Close mobile menu when clicking on a dropdown item
+// Mobile sub-dropdown toggle (Art, Charity Exhibition, etc.)
+const subDropdowns = document.querySelectorAll('.sub-dropdown > .dropdown-item');
+subDropdowns.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const parentSubDropdown = toggle.parentElement;
+        parentSubDropdown.classList.toggle('active');
+    });
+});
+
+// Close mobile menu when clicking on a dropdown item (but not sub-dropdown toggles)
 const dropdownItems = document.querySelectorAll('.dropdown-item');
 dropdownItems.forEach(item => {
+    // Skip items that are sub-dropdown toggles (handled above)
+    if (item.parentElement.classList.contains('sub-dropdown') && item === item.parentElement.querySelector('.dropdown-item')) {
+        return;
+    }
     item.addEventListener('click', () => {
         closeMobileMenu();
         if (navDropdown) navDropdown.classList.remove('active');
+        // Close all sub-dropdowns too
+        document.querySelectorAll('.sub-dropdown.active').forEach(sd => sd.classList.remove('active'));
     });
 });
 
