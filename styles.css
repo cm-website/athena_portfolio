@@ -275,6 +275,17 @@ body {
     transform: translateX(5px);
 }
 
+/* Nested sub-dropdown (e.g., Charity Exhibition years) — open to the left to avoid viewport overflow */
+.sub-dropdown-menu .sub-dropdown .sub-dropdown-menu {
+    left: auto;
+    right: 100%;
+    transform: translateX(0);
+}
+
+.sub-dropdown-menu .sub-dropdown:hover .sub-dropdown-menu {
+    transform: translateX(-5px);
+}
+
 .activity-custom-icon {
     width: 65%;
     height: 65%;
@@ -1212,12 +1223,24 @@ a.activity-card.clickable p {
 
     .sub-dropdown:hover .sub-dropdown-menu,
     .sub-dropdown.active .sub-dropdown-menu {
-        max-height: 300px;
+        max-height: 500px;
     }
 
     .sub-dropdown-menu .dropdown-item {
         padding-left: 3.5rem;
         font-size: 0.85rem;
+    }
+
+    /* Nested sub-dropdown items (e.g., Exhibition years) get extra indent */
+    .sub-dropdown-menu .sub-dropdown-menu .dropdown-item {
+        padding-left: 4.5rem;
+    }
+
+    /* Reset positioning for mobile nested sub-dropdowns */
+    .sub-dropdown-menu .sub-dropdown .sub-dropdown-menu {
+        left: 0;
+        right: auto;
+        transform: none;
     }
 
     .sub-dropdown > .dropdown-item::after {
@@ -2171,7 +2194,7 @@ a.activity-card.clickable p {
 /* Gallery Grid */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
 }
 
@@ -2181,12 +2204,13 @@ a.activity-card.clickable p {
     background: white;
     box-shadow: 0 4px 15px rgba(232, 121, 169, 0.1);
     cursor: pointer;
+    aspect-ratio: 4 / 3;
 }
 
 .gallery-item img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     transition: var(--transition-base);
     display: block;
 }
