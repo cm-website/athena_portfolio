@@ -465,6 +465,15 @@ body {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
 /* Hero Visual */
 .hero-visual {
     display: flex;
